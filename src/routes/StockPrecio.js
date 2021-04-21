@@ -49,11 +49,18 @@ app.get("/search/:id", async(req,res)=>{
 
 app.post('/crear', async (req, res) => {
     let stock = await Stock_Precio.create(req.body);
-
+    let stockExist = await Stock_Precio.find({sku:req.body.sku});
+    console.log("nuevo producto:" + stockExist);
+    if(stockExist>0){
+        res.status(400).json({
+            ok: false,
+            message: 'Error no se puede duplicar un  producto '
+        })
+    }
     if(!stock) {
         res.status(500).json({
             ok: false,
-            message: 'Error al insertar un nuevo producto'
+            message: 'Error al insertar un nuevo producto '
         });
     }
 
