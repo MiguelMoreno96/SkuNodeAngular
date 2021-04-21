@@ -71,4 +71,3 @@ app.post('/crear', async (req, res) => {
 });
 
 module.exports=app;
-
