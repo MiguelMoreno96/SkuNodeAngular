@@ -1,7 +1,7 @@
-const StockPrecie = require('../Controller/StockPrecie');
+const StockPrecie = require('../models/StockPrecie');
 
 const express = require('express'),
-        Stock_Precio = require('../Controller/StockPrecie'),
+        Stock_Precio = require('../models/StockPrecie'),
         app= express();
 
 

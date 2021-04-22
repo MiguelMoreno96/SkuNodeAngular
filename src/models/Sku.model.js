@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const StockPrecieSchema = new mongoose.Schema({
+const SkuModel = new mongoose.Schema({
     sku:{
         type: String,
         require: [true, "Se require el SKU para el producto"],
@@ -18,7 +18,7 @@ const StockPrecieSchema = new mongoose.Schema({
         type: String,
         require: [true, "Se require el nombre del producto"]
     },
-    modelo: { 
+    modelo: {
         type:String,
         require: true
     },
@@ -28,4 +28,4 @@ const StockPrecieSchema = new mongoose.Schema({
     }
 });
 
-module.exports= mongoose.model("StockPrecie", StockPrecieSchema);
+module.exports= mongoose.model("SkuModel", SkuModel);
