@@ -22,7 +22,7 @@ app.get('/', async (req,res) => {
 
 
 app.get("/search/:id", async(req,res)=>{
-    let {id}= req.params.id;
+    let id= req.params.id;
     const sp= await Stock_Precio.findById(id)
 
    try{
@@ -48,16 +48,32 @@ app.get("/search/:id", async(req,res)=>{
 
 
 app.post('/crear', async (req, res) => {
+    
     let stock = await Stock_Precio.create(req.body);
-    let stockExist = await Stock_Precio.find({sku:req.body.sku});
-    console.log("nuevo producto:" + stockExist);
-    if(stockExist>0){
+    
+    let newProduct = {
+        sku: stock.sku,
+        titulo: stock.titulo,
+        status: stock.status,
+        marca: stock.marca,
+        modelo: stock.modelo,
+        marketPlace: stock.marketPlace
+    }
+    console.log(newProduct.sku); //si lanza el sku que se inserta ^v^
+    let stockExist = await Stock_Precio.find(); //{sku:req.body.sku}
+
+for (const existencias in stockExist) {
+    if(newProduct == stockExist[existencias]){
         res.status(400).json({
             ok: false,
-            message: 'Error no se puede duplicar un  producto '
-        })
+            message: '¡Error! No se puede duplicar un producto '
+        }); 
     }
-    if(!stock) {
+    //console.log(`producto ${existencias}: ${stockExist[existencias]}`)
+    //console.log(`El producto ${existencias} no se parece con el ingresado `);
+}
+
+    if(!newProduct) {
         res.status(500).json({
             ok: false,
             message: 'Error al insertar un nuevo producto '
@@ -66,8 +82,9 @@ app.post('/crear', async (req, res) => {
 
     res.status(201).json({
         ok: true,
-        stock
+        newProduct
     });
+    
 });
 
 module.exports=app;
