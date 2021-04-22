@@ -5,18 +5,18 @@ const StockPrice = require('../models/StockPrecie');
 
 exports.getAllStockPrice = async (req,res) => {
    try {
-       const stockPrice = await StockPrice.find();
+        const stockPrice = await StockPrice.find();
 
-       if(!stockPrice) return res.status(400).json({
-           success: false,
-           message: 'No hay datos de stock y precio'
-       })
+        if(!stockPrice) return res.status(400).json({
+            success: false,
+            message: 'No hay datos de stock y precio'
+        })
 
-       return res.status(200).json({
-           success: true,
-           count: stockPrice.length,
-           data: stockPrice
-       })
+        return res.status(200).json({
+            success: true,
+            count: stockPrice.length,
+            data: stockPrice
+        })
    } catch (error) {
        return res.status(500).json({
            success: false,
