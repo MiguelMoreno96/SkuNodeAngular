@@ -1,0 +1,97 @@
+[
+    {
+        "sku":"H20-64307",
+        "titulo":"Acordeón   MONT 3SW WH FBE",
+        "status":1,
+        "marca":"MONTANAR",
+        "modelo":"MONT 3SW WH FBE",
+        "marketPlace":"ELEKTRA"      
+    },
+    {
+        "sku":"H20-64303",
+        "titulo":"Acordeón   MONT 3SW WH GCF",
+        "status":1,
+        "marca":"MONTANAR",
+        "modelo":"MONT 3SW WH GCF",
+        "marketPlace":"ELEKTRA"      
+    },
+    {
+        "sku":"H20-64309",
+        "titulo":"Acordeón   MONT 3SW RED FBE",
+        "status":1,
+        "marca":"MONTANARI",
+        "modelo":"MONT 3SW RED FBE",
+        "marketPlace":"ELEKTRA"      
+    },
+    {
+        "sku":"H20-51123",
+        "titulo":"CONTROL 28-1L PR",
+        "status":1,
+        "marca":"JBL",
+        "modelo":"CONTROL 28-1L PR",
+        "marketPlace":"ELEKTRA"      
+    },
+    {
+        "sku":"H20-39658",
+        "titulo":"Amplificador   XTI2002",
+        "status":1,
+        "marca":"CROWN",
+        "modelo":"XTI2002",
+        "marketPlace":"ELEKTRA" 
+    },
+    {
+        "sku":"H20-42491",
+        "titulo":"Amplificador bajo   HMHD150",
+        "status":1,
+        "marca":"HARTKE",
+        "modelo":"HMHD150",
+        "marketPlace":"ELEKTRA" 
+    },
+    {
+        "sku":"",
+        "titulo":"",
+        "status":1,
+        "marca":"",
+        "modelo":"",
+        "marketPlace":"ELEKTRA" 
+    },
+    {
+        "sku":"H20-43431",
+        "titulo":"Audífonos cerrados   ATH-M20X",
+        "status":1,
+        "marca":"AUDIO TE",
+        "modelo":"ATH-M20X",
+        "marketPlace":"ELEKTRA" 
+    },{
+        "sku":"H20-40567",
+        "titulo":"Audifonos estudio   K702",
+        "status":1,
+        "marca":"AKG",
+        "modelo":"K702",
+        "marketPlace":"ELEKTRA" 
+    },
+    {
+        "sku":"H20-47468",
+        "titulo":"Audifonos monitoreo   K182",
+        "status":1,
+        "marca":"AKG",
+        "modelo":"K182",
+        "marketPlace":"ELEKTRA" 
+    },
+    {
+        "sku":"H20-40565",
+        "titulo":"Audifonos estereo estudio   K240 STUDIO",
+        "status":1,
+        "marca":"AKG",
+        "modelo":"K240 STUDIO",
+        "marketPlace":"ELEKTRA" 
+    },
+    {
+        "sku":"H20-47471",
+        "titulo":"Audifonos estudio   K72",
+        "status":1,
+        "marca":"AKG",
+        "modelo":"K72",
+        "marketPlace":"ELEKTRA" 
+    }
+]

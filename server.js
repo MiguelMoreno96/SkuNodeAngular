@@ -4,6 +4,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const path =require("path");
 const producRoutes = require("./src/routes/StockPrecio");
+const ProducPrecie = require("./src/routes/Products.routes")
+
+
 
 
 const app = express();
@@ -13,7 +16,8 @@ app.use(express.urlencoded({  extended: false  }));
 app.use(express.json())
 app.use(cors())
 
-app.use('/stoks',producRoutes);
+app.use('/productos',producRoutes);
+app.use('/stoks', ProducPrecie);
 
 const PORT = process.env.PORT || 3000;
 
