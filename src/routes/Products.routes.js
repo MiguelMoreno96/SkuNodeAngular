@@ -47,8 +47,6 @@ app.get("/search/:id", async(req,res)=>{
 app.post('/add', async(req,res)=>{
     //try {
 
-        let idExist = awaitStock_products.findById
-
         let product = await (await Stock_Products.create(req.body)).populate('sku');
 
         console.log("producto Y:"+product);
